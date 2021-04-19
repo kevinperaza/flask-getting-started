@@ -4,6 +4,12 @@ Create virtual env
 python -m venv env-name
 ```
 
+Create requirements file
+
+```powershell
+pip freeze > requirements.txt
+```
+
 # Run flask app
 
 Setting env variables
