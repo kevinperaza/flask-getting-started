@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <meta charset="UTF-8">
-      <title>Welcome!</title>
+    <meta charset="UTF-8" />
+    <title>Welcome!</title>
   </head>
   <body>
-      <h1>Welcome</h1>
-      <p>Flask stuffs</p>
-      <p>{{ message }}</p>
+    <h1>Welcome</h1>
+    <ul>
+    {% for card in cards %}
+      <li>
+          <a href="{{ url_for('card_view', index=card.index)}}">
+            {{card.name}}
+          </a>
+      </li>
+    {% endfor %}
+    </ul>
   </body>
 </html>
