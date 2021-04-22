@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Remove card!</title>
+  </head>
+  <body>
+    <h1>Remove card</h1>
+    {{card.name}}?
+    <form method="POST">
+        <button type="submit">YES</button>
+        <a href="{{url_for('welcome')}}">NO</a>
+    </form>
+  </body>
+</html>
